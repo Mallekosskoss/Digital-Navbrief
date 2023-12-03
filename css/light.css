@@ -1,0 +1,13 @@
+body, #kart-meny{
+    background-color: #ffffff;
+}
+.grid > div, .dropbtn, .dropdown-content a, .color-switcher, .dropdown-content{
+    color:#000000;
+    background-color: #eeeeee;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+.dropdown a:hover {
+    background-color: #dddddd;
+}

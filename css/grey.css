@@ -1,0 +1,16 @@
+body, #kart-meny{
+    background-color: #222222;
+}
+.grid > div, .dropbtn, .dropdown-content a, .color-switcher, .dropdown-content{
+    color:#000000;
+    background: #666666;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+.dropdown a:hover {
+    background-color: #555555;
+}
+.bilde, #table, #GridView1{
+    filter: invert(80%) brightness(0.75);
+}

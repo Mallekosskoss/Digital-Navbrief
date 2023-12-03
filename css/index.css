@@ -1,0 +1,48 @@
+.grid{
+    position: fixed;
+    right: 10px;
+    display: grid;
+    grid-template-areas: 
+    'vaer'
+    'varsel';
+    gap: 20px;
+    padding: 10px;
+    height: 80vh;
+    justify-content: center;
+    z-index: 0;
+}
+.grid > div {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 10px;
+    width: 40vw;
+    /* box-shadow: 0 10px 15px rgba(0, 0, 0, .3); */
+    cursor: pointer;
+  }
+.item1{
+    grid-area: vaer;
+    height: 40vh;
+}
+.item2{
+    grid-area: varsel;
+    height: 40vh;
+}
+
+#map{
+    width: 50vw;
+    height: 80vh;
+    background: #000000 !important;
+}    
+#kart-meny{
+    display: none;
+    width: 42vw;
+    height: 80vh;
+    border-radius: 10px;
+
+    position: fixed;
+    top: 110px;
+    right: 10px;
+    z-index: 1;
+}

@@ -1,0 +1,36 @@
+.grid{
+    display: grid;
+    grid-template-areas: 
+    'a c'
+    'b d';
+    gap: 20px;
+    height: 80vh;
+    padding: 10px;
+    justify-content: center;
+}
+.grid > div {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    width: 47vw;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    cursor: pointer;
+  }
+
+.item1{
+    grid-area: a;
+    height: 40vh;
+}
+.item2{
+    grid-area: b;
+    height: 40vh;
+}
+.item3{
+    grid-area: c;
+    height: 40vh;
+}
+.item4{
+    grid-area: d;
+    height: 40vh;
+}

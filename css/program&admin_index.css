@@ -1,0 +1,31 @@
+.grid{
+    display: grid;
+    grid-template-areas: 
+    'a b c'
+    'a b c';
+    gap: 20px;
+    height: 80vh;
+    padding: 10px;
+    justify-content: center;
+}
+.grid > div {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    width: 30vw;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+h1{
+    margin-top: 60%;
+}
+.item1{
+    grid-area: a;
+}
+.item2{
+    grid-area: b;
+}
+.item3{
+    grid-area: c;
+}

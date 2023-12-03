@@ -1,0 +1,1 @@
+{"mmsi":258032200,"navigationStatus":"Moored","rateOfTurn":0,"speedOverGround":0,"longitude":5.228765,"latitude":60.343358333333335,"courseOverGround":104.1,"trueHeading":94,"timeStampSeconds":28,"date":1701606508901,"isoDate":"2023-12-03 12:28:28","source":"!BSVDM,1,1,,A,13n52B50000GsoFRQmgl4Btp28A=,0*5F\r"}
