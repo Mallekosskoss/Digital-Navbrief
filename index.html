@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="./css/template.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div class="top-meny">
+    <div class="color-switcher">
+        <div class="theme-buttons-container">
+            <span class="theme-buttons" onclick="changeStatus(0)">
+                <img src="./bilder/ikoner/sun.svg" alt="Sun">
+            </span>
+            <span class="theme-buttons" onclick="changeStatus(1)">
+                <img src="./bilder/ikoner/dusk.svg" alt="Dusk">
+            </span>
+            <span class="theme-buttons" onclick="changeStatus(2)" >
+                <img src="./bilder/ikoner/moon.svg" alt="Moon">
+            </span>
+        </div>        
+    </div>
+    <div class="home">
+        <img src="./bilder/ikoner/house.svg" alt="Hjem" onclick="hjemfunksjon()">
+    </div>
+    <div class="tilbake">
+        <a href="index.html">
+            <img src="./bilder/ikoner/pil.svg" alt="Tilbake">
+        </a>
+    </div> 
+    <div class="dropdown">
+        <button class="dropbtn">MENY</button>
+        <div class="dropdown-content">
+            <a href="vaer_index.html">Forhold</a>
+            <a href="varsel_index.html">Varsel</a>
+            <a href="valgt_vaer_index.html">Forhold fra kart</a>
+            <a href="program_index.html">Program</a>
+            <a href="admin_index.html">Admin</a>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="item1" side-lenke="vaer_index.html">
+            <h1>Forhold</h1>
+            <img class="bilde" src="./bilder/ikoner/vaer.svg" width="600px" style="padding: 50px;" alt="Marinogram"></img>
+        </div>
+        <div class="item2" side-lenke="varsel_index.html">
+            <h1>Varsel</h1>
+            <img class="bilde" src="./bilder/ikoner/varsel.svg" width="500px" style="padding: 50px;" alt="Marinogram"></img>
+        </div>
+    </div>
+    <div class="kart-container">
+        <div id="map" onclick="menyFunction()"></div>
+        <div id="coordinates"></div>
+    </div>
+    <div id="kart-meny">
+        <div class="grid">
+            <div class="item1" side-lenke="valgt_vaer_index.html">
+                <h1>Gå til forhold</h1>
+                <img class="bilde" src="./bilder/ikoner/vaer.svg" width="600px" style="padding: 50px;" alt="Marinogram"></img>
+            </div>
+            <div class="item2" side-lenke="index.html">
+                <h1>Tilbake</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"></script>
+<script src=".\js\Leaflet.RotatedMarker-master\Leaflet.RotatedMarker-master\leaflet.rotatedMarker.js"></script>
+<script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
+<script src="./js/kart.js"></script>
+<script src="./js/skript.js"></script>
+</script>
+</body>
+</html>

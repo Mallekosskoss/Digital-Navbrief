@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/template.css">
+    <link rel="stylesheet" href="./css/vaer_index.css">
+</head>
+<body>
+<div class="top-meny">
+    <div class="color-switcher">
+        <div class="theme-buttons-container">
+            <span class="theme-buttons" onclick="changeStatus(0)">
+                <img src="./bilder/ikoner/sun.svg" alt="Sun">
+            </span>
+            <span class="theme-buttons" onclick="changeStatus(1)">
+                <img src="./bilder/ikoner/dusk.svg" alt="Dusk">
+            </span>
+            <span class="theme-buttons" onclick="changeStatus(2)" >
+                <img src="./bilder/ikoner/moon.svg" alt="Moon">
+            </span>
+        </div>        
+    </div>
+    <div class="home">
+        <img src="./bilder/ikoner/house.svg" alt="Hjem" onclick="hjemfunksjon()">
+    </div>
+    <div class="tilbake">
+        <a href="index.html">
+            <img src="./bilder/ikoner/pil.svg" alt="Tilbake">
+        </a>
+    </div> 
+    <div class="dropdown">
+        <button class="dropbtn">MENY</button>
+        <div class="dropdown-content">
+            <a href="vaer_index.html">Forhold</a>
+            <a href="varsel_index.html">Varsel</a>
+            <a href="valgt_vaer_index.html">Forhold fra kart</a>
+            <a href="program_index.html">Program</a>
+            <a href="admin_index.html">Admin</a>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="grid">
+        <div class="item1" side-lenke="valgt_marinogram.html">
+            <h1>Marinogram</h1>
+            <img class="bilde" src="./bilder/ikoner/marinogram.svg" width="300px" style="padding: 20px;" alt="Marinogram"></img>
+        </div>
+        <div class="item2" side-lenke="valgt_meteogram.html">
+            <h1>Meteogram</h1>
+            <img class="bilde" src="./bilder/ikoner/meteogram.svg" width="500px" style="padding: 20px;" alt="Meteogram"></img>
+        </div>
+        <div class="item3" side-lenke="valgt_tidevann.html">
+            <h1>Tidevann</h1>
+            <img class="bilde" src="./bilder/ikoner/tidevann.svg" width="250px" style="padding: 20px;" alt="Tidevann"></img>
+        </div>
+        <div class="item4" side-lenke="valgt_astronomisk.html">
+            <h1>Astronomisk</h1>
+            <img class="bilde" src="./bilder/ikoner/astronomisk.svg" width="250px" style="padding: 20px;" alt="Astronomisk"></img>
+        </div>
+    </div>
+</div>
+
+<script src="./js/skript.js"></script>
+</script>
+</body>
+</html>

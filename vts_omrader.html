@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/template.css">
+</head>
+<body>
+
+<div class="top-meny">
+    <div class="color-switcher">
+        <div class="theme-buttons-container">
+            <span class="theme-buttons" onclick="changeStatus(0)">
+                <img src="./bilder/ikoner/sun.svg" alt="Sun">
+            </span>
+            <span class="theme-buttons" onclick="changeStatus(1)">
+                <img src="./bilder/ikoner/dusk.svg" alt="Dusk">
+            </span>
+            <span class="theme-buttons" onclick="changeStatus(2)" >
+                <img src="./bilder/ikoner/moon.svg" alt="Moon">
+            </span>
+        </div>        
+    </div>
+    <div class="home">
+        <img src="./bilder/ikoner/house.svg" alt="Hjem" onclick="hjemfunksjon()">
+    </div>
+    <div class="tilbake">
+        <a href="varsel_index.html">
+            <img src="./bilder/ikoner/pil.svg" alt="Tilbake">
+        </a>
+    </div> 
+    <div class="dropdown">
+        <button class="dropbtn">MENY</button>
+        <div class="dropdown-content">
+            <a href="vaer_index.html">Forhold</a>
+            <a href="varsel_index.html">Varsel</a>
+            <a href="valgt_vaer_index.html">Forhold fra kart</a>
+            <a href="program_index.html">Program</a>
+            <a href="admin_index.html">Admin</a>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="bilde">
+        <img src="./powerpoint/behandlet/vts.svg" alt="status"></img>
+    </div>
+</div>
+
+<script src="./js/skript.js"></script>
+</script>
+</body>
+</html>

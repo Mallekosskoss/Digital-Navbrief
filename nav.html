@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/template.css">
+    <link rel="stylesheet" href="./css/astronomisk.css">
+</head>
+<body>
+<div class="top-meny">
+    <div class="color-switcher">
+        <div class="theme-buttons-container">
+            <span class="theme-buttons" onclick="changeStatus(0)">
+                <img src="./bilder/ikoner/sun.svg" alt="Sun">
+            </span>
+            <span class="theme-buttons" onclick="changeStatus(1)">
+                <img src="./bilder/ikoner/dusk.svg" alt="Dusk">
+            </span>
+            <span class="theme-buttons" onclick="changeStatus(2)" >
+                <img src="./bilder/ikoner/moon.svg" alt="Moon">
+            </span>
+        </div>        
+    </div>
+    <div class="home">
+        <img src="./bilder/ikoner/house.svg" alt="Hjem" onclick="hjemfunksjon()">
+    </div>
+    <div class="tilbake">
+        <a href="varsel_index.html">
+            <img src="./bilder/ikoner/pil.svg" alt="Tilbake">
+        </a>
+    </div> 
+    <div class="dropdown">
+        <button class="dropbtn">MENY</button>
+        <div class="dropdown-content">
+            <a href="vaer_index.html">Forhold</a>
+            <a href="varsel_index.html">Varsel</a>
+            <a href="valgt_vaer_index.html">Forhold fra kart</a>
+            <a href="program_index.html">Program</a>
+            <a href="admin_index.html">Admin</a>
+        </div>
+    </div>
+</div>
+<!-- Alt av kode under er hentet fra kildekoden til navigasjonsvarsel hos Kystverket -->
+<div class="wrapper">
+    <table cellspacing="1" cellpadding="2" rules="all" border="1" id="GridView1" style="border-color:#00253F;width:100%;border-color:#00253F;border-width:1px;border-style:None;width:1245px;border-collapse:collapse;">
+		<tr>
+			<th class="Header" align="left" scope="col">Navco &#197;r</th><th class="Header" align="left" scope="col">Nr</th><th class="Header" align="left" scope="col">Kunngjort</th><th class="Header" align="left" scope="col">Varsel</th><th class="Header" align="left" scope="col">Warning</th>
+		</tr><tr class="Item">
+			<td style="width:4%;">2023</td><td style="width:3%;">609</td><td style="width:10%;">13.11.2023 12:36 UTC</td><td style="width:41%;">AVLOEYSINGEN LYKT 71-6.3N 025-23.0E ER SLUKNET.</td><td style="width:42%;">AVLOEYSINGEN LIGHT 71-6.3N 025-23.0E IS UNLIT.</td>
+		</tr><tr class="AItem">
+			<td style="width:4%;">2023</td><td style="width:3%;">608</td><td style="width:10%;">13.11.2023 06:11 UTC</td><td style="width:41%;">TJOERNANESGRUNNEN LANTERNE 59-22.2N 006-02.4E ER SLUKNET.</td><td style="width:42%;">TJOERNANESGRUNNEN LIGHT 59-22.2N 006-02.4E IS UNLIT.</td>
+		</tr><tr class="Item">
+			<td style="width:4%;">2023</td><td style="width:3%;">605</td><td style="width:10%;">10.11.2023 17:46 UTC</td><td style="width:41%;">RAUDBERGGRUNNEN LANTERNE 69-46.3N 030-08.4E ER SLUKNET.</td><td style="width:42%;">RAUDBERGGRUNNEN LIGHT 69-46.3N 030-08.4E IS UNLIT.</td>
+		</tr><tr class="AItem">
+			<td style="width:4%;">2023</td><td style="width:3%;">598</td><td style="width:10%;">09.11.2023 02:26 UTC</td><td style="width:41%;">HOENA LYKT 59-12.1N 005-49.8E ER SLUKNET.</td><td style="width:42%;">HOENA LIGHT 59-12.1N 005-49.8E IS UNLIT.</td>
+		</tr><tr class="Item">
+			<td style="width:4%;">2023</td><td style="width:3%;">595</td><td style="width:10%;">08.11.2023 17:00 UTC</td><td style="width:41%;">5 FORTOEYNINGSBOEYER ER UTPLASSERT I FARVANNET VED TOFTE I HURUM. BOEYENE ER MERKET I ELEKTRONISKE KART. NAVIGER VED FORSIKTIGHET. 081700UTC</td><td style="width:42%;">5 BUOYS ARE&#160; MOORED AT TOFTE IN HURUM. BUOYS ARE MARKED ON ELECTRONIC MAPS. NAVIGATE WITH CAUTION. 081700UTC</td>
+		</tr><tr class="AItem">
+			<td style="width:4%;">2023</td><td style="width:3%;">591</td><td style="width:10%;">07.11.2023 09:47 UTC</td><td style="width:41%;">GRAS&#216;YANE FYR HAR ENDRET LYSKARAKTER TIL OC (3) WRG 10S (5+1+1+1+1+1)</td><td style="width:42%;">GRAS&#216;YANE LIGHTHOUSE HAS CHANGED LIGHT RATING TO OC (3) WRG 10S (5+1+1+1+1+1)</td>
+		</tr><tr class="Item">
+			<td style="width:4%;">2023</td><td style="width:3%;">589</td><td style="width:10%;">07.11.2023 09:27 UTC</td><td style="width:41%;">FL&#216;RAUDEN FYRLYKT HAR ENDRET LYSKARAKTER TIL OC (2) WRG 8S (3+2+1+2)</td><td style="width:42%;">FL&#216;RAUDEN BEACON HAS CHANGED LIGHT CHARACTER TO OC (2) WRG 8S (3+2+1+2)</td>
+		</tr><tr class="AItem">
+			<td style="width:4%;">2023</td><td style="width:3%;">587</td><td style="width:10%;">06.11.2023 20:21 UTC</td><td style="width:41%;">SJ&#216;FIBERKABEL INSTALLASJON.
+
+KABELEN ER MIDLERTIDIG EKSPONERT P&#197; HAVBUNNEN FREM TIL 10. DESEMBER 2023. UNNG&#197; TR&#197;LING FOR &#197; BESKYTTE FISKEUTSTYR OG KABELUTSTYR INNENFOR 500M FRA F&#216;LGENDE:
+
+&#160;
+
+RAET: 58-23,18N 009-4,52E
+
+LARVIKFJORD: 58-46,81N 010-3,85E
+
+HVALERDYPET: 58-59,59N 010-39,87E
+
+&#160;
+
+&#160;</td><td style="width:42%;">SEA FIBER CABLE INSTALLATION.
+
+THE CABLE IS TEMPORARILY EXPOSED ON THE SEAFLOOR UNTIL 10 DECEMBER 2023. AVOID TRAWLING TO PROTECT FISHING EQUIPMENT AND CABLE EQUIPMENT WITHIN 500M OF THE FOLLOWING:
+
+&#160;
+
+RAET: 58-23,18N 009-4,52E
+
+LARVIKFJORD: 58-46,81N 010-3,85E
+
+WHALER DEPTH: 58-59,59N 010-39,87E
+
+&#160;</td>
+		</tr><tr class="Item">
+			<td style="width:4%;">2023</td><td style="width:3%;">586</td><td style="width:10%;">05.11.2023 12:33 UTC</td><td style="width:41%;">LANGROEA RACON 64-28.9N 010-30.4E ER UTE AV DRIFT.</td><td style="width:42%;">LANGROEA RACON 64-28.9N 010-30.4E IS INOPERATIVE.</td>
+		</tr><tr class="AItem">
+			<td style="width:4%;">2023</td><td style="width:3%;">583</td><td style="width:10%;">03.11.2023 18:15 UTC</td><td style="width:41%;">ROESSVIKRENNA, 4 LYSBOEYE 59-10.6N 010-57.2E ER HAVARERT.</td><td style="width:42%;">ROESSVIKRENNA, 4 LIGHTBUOY 59-10.6N 010-57.2E IS MISSING.</td>
+		</tr><tr class="Item">
+			<td style="width:4%;">2023</td><td style="width:3%;">578</td><td style="width:10%;">02.11.2023 13:18 UTC</td><td style="width:41%;">FAERRISSUND LYKT 67-5.1N 014-25.8E ER SLUKNET.</td><td style="width:42%;">FAERRISSUND LIGHT 67-5.1N 014-25.8E IS UNLIT.</td>
+		</tr><tr class="AItem">
+			<td style="width:4%;">2023</td><td style="width:3%;">570</td><td style="width:10%;">30.10.2023 09:59 UTC</td><td style="width:41%;">I FORBINDELSE MED KABELLEGGING I PERIODEN 30.10.23-13.11.23 MELLOM B&#216;MLO OG STORD I STOKKSUND
+
+I POSISJON N59-46,9 E005-19,8 BES DET OM AT FART&#216;Y SOM PASSERER&#160;
+
+REDUSERER FARTEN FOR &#197; UNNG&#197; &#197; LAGE STORE B&#216;LGER&#160;
+
+&#160;</td><td style="width:42%;">IN CONNECTION WITH CABLE LAYING IN THE PERIOD 30.10.23-13.11.23 BETWEEN B&#216;MLO AND STORD IN STOKKSUND IN POSITION N59-46.9 E005-19.8 IT IS REQUESTED THAT PASSING VESSELS REDUCES SPEED TO AVOID BIG WAVES</td>
+		</tr><tr class="Item">
+			<td style="width:4%;">2023</td><td style="width:3%;">568</td><td style="width:10%;">29.10.2023 00:06 UTC</td><td style="width:41%;">KLAUVANESET LANTERNE 63-45.8N 008-49.2E ER UREGELMESSIG.</td><td style="width:42%;">KLAUVANESET LIGHT 63-45.8N 008-49.2E IS UNRELIABLE.</td>
+		</tr><tr class="AItem">
+			<td style="width:4%;">2023</td><td style="width:3%;">544</td><td style="width:10%;">18.10.2023 05:46 UTC</td><td style="width:41%;">BREVIKSBRUA, MIDT 1 LANTERNE 59-3.0N 009-41.6E ER SLUKNET.</td><td style="width:42%;">BREVIKSBRUA, MIDT 1 LIGHT 59-3.0N 009-41.6E IS UNLIT.</td>
+		</tr><tr class="Item">
+			<td style="width:4%;">2023</td><td style="width:3%;">526</td><td style="width:10%;">09.10.2023 10:19 UTC</td><td style="width:41%;">TORSBERG MIDTRE, V BOEYE 59-7.5N 009-36.7E UTE AV POSISJON.</td><td style="width:42%;">TORSBERG MIDTRE, V BUOY 59-7.5N 009-36.7E OFF STATION.</td>
+		</tr>
+	</table>
+</div>
+
+<script src="./js/skript.js"></script>
+</body>
+</html>
